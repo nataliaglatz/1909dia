@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function buscarNoBancoDeDados() {
+    // Simulando uma busca no banco de dados
+    var encontrado = false;
+
+    // Tentar realizar a busca
+    try {
+        if (!encontrado) {
+            throw new Error("Item não encontrado no banco de dados.");
+        }
+        // Código para lidar com o item encontrado
+    } catch (erro) {
+        console.log("Erro: " + erro.message);
+        // Personalizar a mensagem de erro para o usuário
+        console.log("Desculpe, não foi possível encontrar o item.");
+    }
+}
+
+buscarNoBancoDeDados();
+
+    </script>
+</body>
+</html>

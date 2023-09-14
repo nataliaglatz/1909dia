@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Matriz de números não ordenados
+var numeros = [5, 2, 9, 1, 3];
+
+// Usando um loop while para classificar os números em ordem decrescente
+var i = 0;
+while (i < numeros.length - 1) {
+    var j = i + 1;
+    while (j < numeros.length) {
+        if (numeros[i] < numeros[j]) {
+            var temp = numeros[i];
+            numeros[i] = numeros[j];
+            numeros[j] = temp;
+        }
+        j++;
+    }
+    i++;
+}
+
+// Exibir os números ordenados em ordem decrescente
+console.log(numeros);
+
+    </script>
+</body>
+</html>
